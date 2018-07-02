@@ -1,0 +1,26 @@
+/*FLOAT GRID*/
+* {
+   box-sizing: border-box;
+}
+
+/*    padding will be a percentage of half gutter/960 px
+    max-width of cols mobile 
+    max-width of cols web */
+
+.col-12 {
+ max-width: 100%;
+}
+
+.col-4 {
+/*    float: left;*/
+    width: 33.33%;
+
+}
+  /* 12 columns width in percentage */
+
+
+/* Mobile defaults */
+
+/* Non-mobile, grid */
+
+

@@ -1,0 +1,36 @@
+body {
+/*  padding: ;*/
+    box-sizing: border-box;
+    font-family: Roboto;
+    
+}
+
+main {
+    border: 1px solid red;
+}
+header {
+    background-color: darkorange;
+}
+h1 {
+    padding-top: 12px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*    padding-bottom: 30px;*/
+
+/*temporarily targeted img to see what I am doing*/
+img {
+    max-width: 50%;
+}
+.row {
+    border: 1px solid green;
+}
+
+.col-4 {
+ border: 1px solid lightgray;
+}
