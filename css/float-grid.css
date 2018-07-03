@@ -2,10 +2,6 @@
    box-sizing: border-box;
 /*    guarantees element will take up no more than that width. without box-sizing: border box, grid behave unpredictably.*/
 }
-/*
-less than 640px, columns should take up 100% of their parent container's width, but there should continue to be padding between the card and the edge of the viewport.
-*/
-
 .row {
     /*row is the container that wraps the col-4 wide*3 grid - the 'hard width'
     */
@@ -15,24 +11,26 @@ less than 640px, columns should take up 100% of their parent container's width, 
     margin: 0 auto;
     /*rows get automatically centered in their parent container 10px gutter on either side for 1000px width. */
  }  
+
 /* 
 Mobile defaults 
 */
+
 .row::before,
 .row::after {
   display: table;
-  content: '';
+  content: '';  
 /*   
-    forces the height of each row to expand to the height of its tallest child element. 
+forces the height of each row to expand to the height of its tallest child element. 
 */
 }
 
 /*clear fix*/
 .row ::after {
     clear: both;
-/*    content after the row will act as though the preceding row was in the normal flow, instead of butting up against the top of the row container.*/
+/* content after the row will act as though the preceding row was in the normal flow, instead of butting up against the top of the row container.*/
 }
-    /* Non-mobile, grid */
+/* Non-mobile, grid */
 .col-12 {
     max-width: 100%;
 }
@@ -42,17 +40,16 @@ Mobile defaults
     width: 33.333%;
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
+    margin-bottom: 20px;
     border: 1px solid lightgray;
 }
 
-/*mobile default*/
-
-
-/* 'mobile first' per iOS designing for that landscape accomodate this fr get go 
-start off with the first width created in the container at the width of desktop around 960-1200 px
-child elements will be a percentage
+/* 'mobile first' is an expression that means we are designing for the i0S landscape from 'the get go'
+start off with the first width created in the main wrapper at the width of desktop around 960-1200 px
+after that child elements will be a percentage of the main wrapper
 */
 /*work with min-width max-width
+to get min-width of 375 I toggled to mobile view in Inspector and found the first break point at 375 px
 */
 @media only screen and (max-width: 375px) {
     .col-4, .col-12 { 

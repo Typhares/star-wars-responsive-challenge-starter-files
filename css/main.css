@@ -1,18 +1,17 @@
+/*the content img h3 and p are not in the correct container
+content not styled as example
+the gray border is wrong, margin and padding properties are wrong
+*/
 body {
     margin: 0;
+    font-family: "Roboto", sans-serif;
 /*    box-sizing: border-box;*/
 }
-/*style: Top, Bottom, Left, Right
-margin: auto, 0: 
-apply margin Top Bottom, 0 Left, Right*/
-/*
-main {
-    border: 2px solid red;
-}
-*/
+
 header {
     background-color: #eebb44;
     padding-left: 40px;
+    margin-bottom: 40px;
 }
 div {
     display: block;
@@ -24,15 +23,17 @@ h1 {
 
 p {
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
+
+h3 {
+    margin-bottom: 3px;
+}
 p h3 {
     padding: 20px;
-
 }
-/*temporarily targeted img to see what I am doing
-make responsive on the float-grid*/
+
 img {
     max-width: 100%;
 }
