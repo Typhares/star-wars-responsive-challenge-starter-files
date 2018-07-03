@@ -7,7 +7,8 @@ less than 640px, columns should take up 100% of their parent container's width, 
 */
 
 .row {
-    /*row is the container that wraps the col-4 wide*3 grid*/
+    /*row is the container that wraps the col-4 wide*3 grid - the 'hard width'
+    */
     max-width: 1000px;
     padding-left: 20px;
     padding-right: 20px;
@@ -46,17 +47,27 @@ Mobile defaults
 
 /*mobile default*/
 
-.col-4 .col-12 {
-    width: 100%px;
-    
+
+/* 'mobile first' per iOS designing for that landscape accomodate this fr get go 
+start off with the first width created in the container at the width of desktop around 960-1200 px
+child elements will be a percentage
+*/
+/*work with min-width max-width
+*/
+@media only screen and (max-width: 375px) {
+    .col-4, .col-12 { 
+     width: 100%; 
+    }
 }
 
-@media only screen and (min-width: 640px) {
-  /* 3 columns, 3/12 in % */
-  .col-3 {
-    width: 25%;
-  }
+/*can use multiple media queries 
+*/
 
+@media only screen and (max-width: 475px) {
+    .col-4, .col-12 { 
+     width: 100%; 
+    }
+}
 
 
 

@@ -11,7 +11,7 @@ main {
 }
 */
 header {
-    background-color: darkorange;
+    background-color: #eebb44;
     padding-left: 40px;
 }
 div {
@@ -34,5 +34,5 @@ p h3 {
 /*temporarily targeted img to see what I am doing
 make responsive on the float-grid*/
 img {
-    max-width: 33.333%;
+    max-width: 100%;
 }
