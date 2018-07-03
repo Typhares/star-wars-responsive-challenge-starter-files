@@ -1,41 +1,65 @@
-/*FLOAT GRID*/
 * {
    box-sizing: border-box;
+/*    guarantees element will take up no more than that width. without box-sizing: border box, grid behave unpredictably.*/
 }
+/*
+less than 640px, columns should take up 100% of their parent container's width, but there should continue to be padding between the card and the edge of the viewport.
+*/
 
 .row {
+    /*row is the container that wraps the col-4 wide*3 grid*/
     max-width: 1000px;
     padding-left: 20px;
     padding-right: 20px;
-    margin: auto;
-
-/*    padding will be a percentage of half gutter/960 px
-    max-width of cols mobile 
-    max-width of cols web */
-
-/*    padding will be a percentage of half gutter/960 px
-    max-width of cols mobile 
-    max-width of cols web */
-
+    margin: 0 auto;
+    /*rows get automatically centered in their parent container 10px gutter on either side for 1000px width. */
+ }  
+/* 
+Mobile defaults 
+*/
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+/*   
+    forces the height of each row to expand to the height of its tallest child element. 
+*/
 }
+
+/*clear fix*/
+.row ::after {
+    clear: both;
+/*    content after the row will act as though the preceding row was in the normal flow, instead of butting up against the top of the row container.*/
+}
+    /* Non-mobile, grid */
 .col-12 {
     max-width: 100%;
 }
 
 .col-4 {
     float: left;
-    width: 33.33%;
+    width: 33.333%;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
     border: 1px solid lightgray;
-
 }
 
+/*mobile default*/
 
-/*target for all possible viewport */
-  /* 12 columns width in percentage */
+.col-4 .col-12 {
+    width: 100%px;
+    
+}
+
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
 
 
-/* Mobile defaults */
 
-/* Non-mobile, grid */
+
+
 
 
