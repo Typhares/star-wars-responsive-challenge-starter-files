@@ -1,15 +1,19 @@
 body {
-/*  padding: ;*/
+    margin: 0;
     box-sizing: border-box;
-    font-family: Roboto;
-    
 }
-
+/*style: Top, Bottom, Left, Right
+margin: auto, 0: 
+apply margin Top Bottom, 0 Left, Right*/
+/*
 main {
-    border: 1px solid red;
+    border: 2px solid red;
 }
+*/
 header {
     background-color: darkorange;
+    padding-left: 40px;
+    margin-bottom: 
 }
 h1 {
     padding-top: 12px;
@@ -18,19 +22,11 @@ h1 {
 
 p {
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
-/*    padding-bottom: 30px;*/
 
-/*temporarily targeted img to see what I am doing*/
+/*temporarily targeted img to see what I am doing
+make responsive on the float-grid*/
 img {
-    max-width: 50%;
-}
-.row {
-    border: 1px solid green;
-}
-
-.col-4 {
- border: 1px solid lightgray;
+    max-width: 33.333%;
 }
