@@ -31,6 +31,7 @@ forces the height of each row to expand to the height of its tallest child eleme
 /* content after the row will act as though the preceding row was in the normal flow, instead of butting up against the top of the row container.*/
 }
 /* Non-mobile, grid */
+
 .col-12 {
     max-width: 100%;
 }
@@ -41,9 +42,13 @@ forces the height of each row to expand to the height of its tallest child eleme
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
     margin-bottom: 20px;
-    border: 1px solid lightgray;
+/*    border: 1px solid lightgray;*/
 }
 
+.card {
+     border: 1px solid lightgray;
+
+}
 /* 'mobile first' is an expression that means we are designing for the i0S landscape from 'the get go'
 start off with the first width created in the main wrapper at the width of desktop around 960-1200 px
 after that child elements will be a percentage of the main wrapper
